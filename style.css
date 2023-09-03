@@ -13,7 +13,7 @@
 }
 
 .quiz-card {
-    width: 30rem;
+    width: 700px;
 }
 
 
@@ -31,4 +31,23 @@
 .carousel {
     height: 300px;
     width: 500px;
+}
+
+.question-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.quiz-answer:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+
+}
+
+.bg-success, .bg-danger {
+    color: white;
 }

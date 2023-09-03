@@ -9,7 +9,7 @@
     <script src="./script.js"></script>
     <script src="./jason.js"></script>
 </head>
-<body>
+<body onload="init()">
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1">QuizApp</span>
@@ -27,33 +27,39 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h5 class="card-title">Fragen</h5>
-                    <div class="card mb-2">
-                        <div class="card-body">
-                          Antwort
+                    <h5 class="card-title" id="questionTextHTML"></h5>
+                    <div class="card quiz-answer mb-2" onclick="answer('answer_1')">
+                        <div class="card-body" id="answer_1">
+                          
                         </div>
                     </div>
 
-                    <div class="card mb-2">
-                        <div class="card-body">
-                          Antwort
+                    <div class="card quiz-answer mb-2" onclick="answer('answer_2')">
+                        <div class="card-body" id="answer_2">
+                          
                         </div>
                     </div>
 
-                    <div class="card mb-2">
-                        <div class="card-body">
-                          Antwort
+                    <div class="card quiz-answer mb-2" onclick="answer('answer_3')">
+                        <div class="card-body" id="answer_3">
+                          
                         </div>
                     </div>
 
-                    <div class="card mb-2">
-                        <div class="card-body">
-                          Antwort
+                    <div class="card quiz-answer mb-2" onclick="answer('answer_4')">
+                        <div class="card-body" id="answer_4">
+                          
                         </div>
                     </div>
-                    
+                    <div class="question-footer">
+                        <span>
+                            <b>1</b> von <b id="allQuestions">5</b> Fragen
+                        </span>
+        
+                        <button class="btn btn-secondary">Nächte Frage</button>
+                    </div>
+  
                 </div>
-            </div>
             </div>
         </div>
     </div>
