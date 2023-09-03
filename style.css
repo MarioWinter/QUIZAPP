@@ -11,3 +11,24 @@
     justify-content: center;
     align-items: center;
 }
+
+.quiz-card {
+    width: 30rem;
+}
+
+
+.sidebar {
+    background-color: darkcyan;
+    border-bottom-left-radius: var(--bs-card-border-radius);
+    border-top-left-radius: var(--bs-card-border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.carousel {
+    height: 300px;
+    width: 500px;
+}
