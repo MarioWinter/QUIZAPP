@@ -1,4 +1,6 @@
 let currentHtmlQuest = 0;
+let question = htmlQuestions[currentHtmlQuest];
+let idRightAnswer = `answer_${question['right_answer']}`;
 
 function init() {
     document.getElementById('allQuestions').innerHTML = htmlQuestions.length;
@@ -6,9 +8,7 @@ function init() {
 }
 
 
-
 function showHtmlQuestion() {
-    let question = htmlQuestions[currentHtmlQuest];
     document.getElementById('questionTextHTML').innerHTML = question['question'];
     document.getElementById('answer_1').innerHTML = question['answer_1'];
     document.getElementById('answer_2').innerHTML = question['answer_2'];
@@ -16,8 +16,8 @@ function showHtmlQuestion() {
     document.getElementById('answer_4').innerHTML = question['answer_4'];
 }
 
+
 function answer(selection) {
-    let question = htmlQuestions[currentHtmlQuest];
     let selectQuest = selection.slice(-1);
     
     if(question['right_answer'] == selectQuest) {
@@ -25,5 +25,7 @@ function answer(selection) {
         
     } else {
         document.getElementById(selection).parentNode.classList.add('bg-danger');
+        console.log(idRightAnswer);
+        document.getElementById(idRightAnswer).parentNode.classList.add('bg-success');
     }
 }
