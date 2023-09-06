@@ -9,10 +9,10 @@ let htmlQuestions = [
     },
     {
         "question": "Welches HTML-Element wird verwendet, um Überschriften darzustellen?",
-        "answer_1": "<head>",
-        "answer_2": "<title>",
-        "answer_3": "<h1>",
-        "answer_4": "<p>",
+        "answer_1": "head",
+        "answer_2": "title",
+        "answer_3": "h1",
+        "answer_4": "p",
         "right_answer": 3
     },
     {
