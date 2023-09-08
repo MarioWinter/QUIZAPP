@@ -51,3 +51,13 @@
 .bg-success, .bg-danger {
     color: white;
 }
+
+.brain-result {
+    height: 100px;
+}
+
+.finish-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -10,15 +10,14 @@ function init() {
 function showHtmlQuestion() {
     let question = htmlQuestions[currentHtmlQuest];
     if (currentHtmlQuest == htmlQuestions.length) {
-        console.log('Seiten Ende');
+        document.getElementById('endCard').innerHTML = '';
+        document.getElementById('endCard').innerHTML = finishQuiz();
     } else {
-
-    
-    document.getElementById('questionTextHTML').innerHTML = question['question'];
-    document.getElementById('answer_1').innerHTML = question['answer_1'];
-    document.getElementById('answer_2').innerHTML = question['answer_2'];
-    document.getElementById('answer_3').innerHTML = question['answer_3'];
-    document.getElementById('answer_4').innerHTML = question['answer_4'];
+        document.getElementById('questionTextHTML').innerHTML = question['question'];
+        document.getElementById('answer_1').innerHTML = question['answer_1'];
+        document.getElementById('answer_2').innerHTML = question['answer_2'];
+        document.getElementById('answer_3').innerHTML = question['answer_3'];
+        document.getElementById('answer_4').innerHTML = question['answer_4'];
     };
 }
 
@@ -65,5 +64,15 @@ function resetQuests() {
         document.getElementById(answer).parentNode.classList.remove('bg-danger');
         
     }
+
+}
+
+
+function finishQuiz() {
+    return `
+        <div>
+        
+        </div>
+    `;
 
 }
