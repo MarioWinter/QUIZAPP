@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./fonts/rubik/rubik.css">
     <script src="./jason.js"></script>
     <script src="./script.js"></script>
+    <link rel="icon" type="image/png" href="./img/brain result.png">
 </head>
 <body onload="init()">
     <nav class="navbar bg-body-tertiary">
@@ -21,61 +22,56 @@
         <div class="card mb-3 quiz-card">
             <div class="row g-0">
             <div class="col-md-2 sidebar w-25">
-                <a href="#">
-                    <h4>HTML</h4>
-                </a>
+                <img class="logo mt-2" src="./img/logo.png" alt="QuizApp Logo">
+                
+                <div class="quiz-sidebar-html mt-5 text-white fs-4">HTML</div>
+                <div class="quiz-sidebar-css mt-3 text-white fs-4">CSS</div>
+                <div class="quiz-sidebar-js mt-3 text-white fs-4">JS</div>
+                <div class="quiz-sidebar-py mt-3 text-white fs-4">PYTHON</div>
+                
                 
             </div>
             <div class="col-md-8">
-                <div class="card-body" id="endCard">
-                    <!--End Page-->
-                    <!-- <div class="finish-card-container">
-                        <img class="brain-result" src="./img/brain result.png" alt="">
-                        <div class="mt-3 fw-bold">COMPLETE</div>
-                        <div class="mb-4 fw-bold" >HTML QUIZ</div>
-                        <div class="finish-score mb-4">
-                            <div class="fw-bold text-success">YOUR SCORE</div>
-                            <span class="fw-bold ms-4">10/${htmlQuestions.length}</span>
-                        </div>
-                        <button class="btn btn-primary mb-3" >SHARE</button>
-                        <button class="replay-button text-primary">REPLAY</button>
+                <div class="card-body" id="endCard" style="display: block;">
 
-                    </div> -->
+                </div>
 
-                    <!--  -->
-                    
+                <div class="card-body" id="cardContent" style="display: block;">
                     <h5 class="card-title" id="questionTextHTML"></h5>
                     <div class="card quiz-answer mb-2" onclick="answer('answer_1')">
                         <div class="card-body" id="answer_1">
-                          
+                        
                         </div>
                     </div>
 
                     <div class="card quiz-answer mb-2" onclick="answer('answer_2')">
                         <div class="card-body" id="answer_2">
-                          
+                        
                         </div>
                     </div>
 
                     <div class="card quiz-answer mb-2" onclick="answer('answer_3')">
                         <div class="card-body" id="answer_3">
-                          
+                        
                         </div>
                     </div>
 
                     <div class="card quiz-answer mb-2" onclick="answer('answer_4')">
                         <div class="card-body" id="answer_4">
-                          
+                        
                         </div>
                     </div>
                     <div class="question-footer">
+
                         <span>
                             <b id="questPage">1</b> von <b id="allQuestions">5</b> Fragen
                         </span>
         
-                        <button class="btn btn-secondary" disabled id="nextButton" onclick="nextQuest()">Nächte Frage</button>
+                        <button class="btn btn-secondary" disabled id="nextButton" onclick="nextQuest(), loadProgressBar()">Nächte Frage</button>
                     </div>
-  
+                    <div class="progress mt-2" role="progressbar" aria-label="Example with label">
+                        <div id="pogressBar" class="progress-bar" style="width: 0%">0%</div>
+                    </div>
                 </div>
             </div>
         </div>
