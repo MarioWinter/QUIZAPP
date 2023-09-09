@@ -16,7 +16,7 @@ let htmlQuestions = [
         "right_answer": 3
     },
     {
-        "question": "Was ist der Zweck des HTML-<div>-Elements?",
+        "question": "Was ist der Zweck des HTML-div-Elements?",
         "answer_1": "Um eine abgegrenzte Liste von Elementen zu erstellen",
         "answer_2": "Um Text fett zu machen",
         "answer_3": "Um eine Absatzmarkierung zu erstellen",
@@ -41,22 +41,22 @@ let htmlQuestions = [
     },
     {
         "question": "Welches HTML-Element wird verwendet, um einen Link zu einer anderen Webseite zu erstellen?",
-        "answer_1": "<link>",
-        "answer_2": "<a>",
-        "answer_3": "<href>",
-        "answer_4": "<url>",
+        "answer_1": "link",
+        "answer_2": "a",
+        "answer_3": "href",
+        "answer_4": "url",
         "right_answer": 2
     },
     {
         "question": "Wie wird ein Kommentar in HTML geschrieben?",
         "answer_1": "// Dies ist ein Kommentar",
         "answer_2": "/* Dies ist ein Kommentar */",
-        "answer_3": "<!-- Dies ist ein Kommentar -->",
+        "answer_3": "'<!--Dies ist ein Kommentar-->'",
         "answer_4": "# Dies ist ein Kommentar",
         "right_answer": 3
     },
     {
-        "question": "Was ist der Zweck des HTML-<img>-Elements?",
+        "question": "Was ist der Zweck des HTML-img-Elements?",
         "answer_1": "Um Bilder in eine Webseite einzufügen",
         "answer_2": "Um Audio in eine Webseite einzufügen",
         "answer_3": "Um Videos in eine Webseite einzufügen",
@@ -73,10 +73,10 @@ let htmlQuestions = [
     },
     {
         "question": "Welches HTML-Element wird verwendet, um eine geordnete Liste zu erstellen?",
-        "answer_1": "<ol>",
-        "answer_2": "<ul>",
-        "answer_3": "<li>",
-        "answer_4": "<dl>",
+        "answer_1": "ol",
+        "answer_2": "ul",
+        "answer_3": "li",
+        "answer_4": "dl",
         "right_answer": 1
     }
 ];
@@ -332,6 +332,7 @@ let pythonQuestions = [
         "right_answer": 1
     }
 ];
+
 
 
 

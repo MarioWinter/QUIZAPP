@@ -1,4 +1,5 @@
 let currentHtmlQuest = 0;
+let scores = 0;
 
 
 function init() {
@@ -12,6 +13,14 @@ function showHtmlQuestion() {
     if (currentHtmlQuest == htmlQuestions.length) {
         document.getElementById('endCard').innerHTML = '';
         document.getElementById('endCard').innerHTML = finishQuiz();
+        if (scores <= 4) {
+            document.getElementById('score').classList.add('text-danger');
+        } else if (scores < 9) {
+            document.getElementById('score').classList.add('text-warning');
+        } else if (scores >= 9) {
+            document.getElementById('score').classList.add('text-success');
+        }
+
     } else {
         document.getElementById('questionTextHTML').innerHTML = question['question'];
         document.getElementById('answer_1').innerHTML = question['answer_1'];
@@ -29,6 +38,7 @@ function answer(selection) {
     
     if(question['right_answer'] == selectQuest) {
         document.getElementById(selection).parentNode.classList.add('bg-success');
+        scores++;
         
     } else {
         document.getElementById(selection).parentNode.classList.add('bg-danger');
@@ -47,6 +57,7 @@ function nextQuest() {
 
 }
 
+
 function nextPage() {
     let currentQuestPage = currentHtmlQuest;
     if (currentHtmlQuest == htmlQuestions.length) {
@@ -57,6 +68,7 @@ function nextPage() {
     }
 }
 
+
 function resetQuests() {
     for (let i = 1; i < 5; i++) {
         let answer = 'answer_' + i;
@@ -64,19 +76,19 @@ function resetQuests() {
         document.getElementById(answer).parentNode.classList.remove('bg-danger');
         
     }
-
 }
 
 
 function finishQuiz() {
+    
     return `
         <div class="finish-card-container">
             <img class="brain-result" src="./img/brain result.png" alt="">
             <div class="mt-3 fw-bold">COMPLETE</div>
             <div class="mb-4 fw-bold" >HTML QUIZ</div>
             <div class="finish-score mb-4">
-                <div class="fw-bold text-success">YOUR SCORE</div>
-                <span class="fw-bold ms-4">10/${htmlQuestions.length}</span>
+                <div id="score" class="fw-bold">YOUR SCORE</div>
+                <span class="fw-bold ms-4">${scores}/${htmlQuestions.length}</span>
             </div>
             <button class="btn btn-primary mb-3" >SHARE</button>
             <button class="replay-button text-primary">REPLAY</button>
