@@ -70,8 +70,16 @@ function resetQuests() {
 
 function finishQuiz() {
     return `
-        <div>
-        
+        <div class="finish-card-container">
+            <img class="brain-result" src="./img/brain result.png" alt="">
+            <div class="mt-3 fw-bold">COMPLETE</div>
+            <div class="mb-4 fw-bold" >HTML QUIZ</div>
+            <div class="finish-score mb-4">
+                <div class="fw-bold text-success">YOUR SCORE</div>
+                <span class="fw-bold ms-4">10/${htmlQuestions.length}</span>
+            </div>
+            <button class="btn btn-primary mb-3" >SHARE</button>
+            <button class="replay-button text-primary">REPLAY</button>
         </div>
     `;
 
