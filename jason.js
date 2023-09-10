@@ -1,85 +1,86 @@
-let htmlQuestions = [
+let herrDerRingeQuestions = [
     {
-        "question": "Was steht für HTML?",
-        "answer_1": "Hyperlink and Text Markup Language",
-        "answer_2": "Hyper Text Markup Language",
-        "answer_3": "Hyper Transfer Markup Language",
-        "answer_4": "Highly Typed Multiple Language",
-        "right_answer": 2
-    },
-    {
-        "question": "Welches HTML-Element wird verwendet, um Überschriften darzustellen?",
-        "answer_1": "head",
-        "answer_2": "title",
-        "answer_3": "h1",
-        "answer_4": "p",
-        "right_answer": 3
-    },
-    {
-        "question": "Was ist der Zweck des HTML-div-Elements?",
-        "answer_1": "Um eine abgegrenzte Liste von Elementen zu erstellen",
-        "answer_2": "Um Text fett zu machen",
-        "answer_3": "Um eine Absatzmarkierung zu erstellen",
-        "answer_4": "Um Bereiche für Layout und Gruppierung von Elementen zu erstellen",
+        "question": "Wer ist der Hauptcharakter in 'Herr der Ringe'?",
+        "answer_1": "Gollum",
+        "answer_2": "Aragorn",
+        "answer_3": "Gandalf",
+        "answer_4": "Frodo Beutlin",
         "right_answer": 4
     },
     {
-        "question": "Was ist HTML5?",
-        "answer_1": "Die neueste Version von HTML",
-        "answer_2": "Ein Videocodierungsformat",
-        "answer_3": "Ein neuer Webbrowser",
-        "answer_4": "Eine Computersprache",
-        "right_answer": 1
-    },
-    {
-        "question": "Welche Dateierweiterung wird normalerweise für HTML-Dokumente verwendet?",
-        "answer_1": ".exe",
-        "answer_2": ".html",
-        "answer_3": ".txt",
-        "answer_4": ".pdf",
+        "question": "Was ist der Ring in 'Herr der Ringe'?",
+        "answer_1": "Ein Ehering",
+        "answer_2": "Ein magischer Ring der Macht",
+        "answer_3": "Ein Schmuckstück",
+        "answer_4": "Ein Ring, um die Welt zu regieren",
         "right_answer": 2
     },
     {
-        "question": "Welches HTML-Element wird verwendet, um einen Link zu einer anderen Webseite zu erstellen?",
-        "answer_1": "link",
-        "answer_2": "a",
-        "answer_3": "href",
-        "answer_4": "url",
-        "right_answer": 2
-    },
-    {
-        "question": "Wie wird ein Kommentar in HTML geschrieben?",
-        "answer_1": "// Dies ist ein Kommentar",
-        "answer_2": "/* Dies ist ein Kommentar */",
-        "answer_3": "'<!--Dies ist ein Kommentar-->'",
-        "answer_4": "# Dies ist ein Kommentar",
+        "question": "Wer ist der Schöpfer des Rings in 'Herr der Ringe'?",
+        "answer_1": "Gollum",
+        "answer_2": "Frodo Beutlin",
+        "answer_3": "Sauron",
+        "answer_4": "Gandalf",
         "right_answer": 3
     },
     {
-        "question": "Was ist der Zweck des HTML-img-Elements?",
-        "answer_1": "Um Bilder in eine Webseite einzufügen",
-        "answer_2": "Um Audio in eine Webseite einzufügen",
-        "answer_3": "Um Videos in eine Webseite einzufügen",
-        "answer_4": "Um Text in eine Webseite einzufügen",
-        "right_answer": 1
-    },
-    {
-        "question": "Was bedeutet CSS in Bezug auf HTML?",
-        "answer_1": "Computer Style Sheet",
-        "answer_2": "Cascading Style Sheet",
-        "answer_3": "Creative Style Sheet",
-        "answer_4": "Colorful Style Sheet",
+        "question": "Was ist der Name des Landes, in dem die Geschichte von 'Herr der Ringe' stattfindet?",
+        "answer_1": "Hogwarts",
+        "answer_2": "Mittelerde",
+        "answer_3": "Narnia",
+        "answer_4": "Westeros",
         "right_answer": 2
     },
     {
-        "question": "Welches HTML-Element wird verwendet, um eine geordnete Liste zu erstellen?",
-        "answer_1": "ol",
-        "answer_2": "ul",
-        "answer_3": "li",
-        "answer_4": "dl",
+        "question": "Welche Kreatur ist bekannt für ihren Slogan 'Mein Schatz' in 'Herr der Ringe'?",
+        "answer_1": "Zauberer",
+        "answer_2": "Elben",
+        "answer_3": "Orks",
+        "answer_4": "Gollum",
+        "right_answer": 4
+    },
+    {
+        "question": "Wer ist der König von Gondor in 'Herr der Ringe'?",
+        "answer_1": "Boromir",
+        "answer_2": "Sauron",
+        "answer_3": "Aragorn",
+        "answer_4": "Frodo Beutlin",
+        "right_answer": 3
+    },
+    {
+        "question": "Was ist das Ziel der Reise der Gefährten in 'Herr der Ringe'?",
+        "answer_1": "Eine Schatzsuche",
+        "answer_2": "Die Rettung von Prinzessin Leia",
+        "answer_3": "Die Vernichtung des Rings",
+        "answer_4": "Die Suche nach einem verlorenen Schwert",
+        "right_answer": 3
+    },
+    {
+        "question": "Wer ist der mächtigste Zauberer in 'Herr der Ringe'?",
+        "answer_1": "Gandalf",
+        "answer_2": "Harry Potter",
+        "answer_3": "Dumbledore",
+        "answer_4": "Saruman",
         "right_answer": 1
+    },
+    {
+        "question": "Welche Rasse hat große Bäume in 'Herr der Ringe'?",
+        "answer_1": "Elben",
+        "answer_2": "Orks",
+        "answer_3": "Ents",
+        "answer_4": "Zwerge",
+        "right_answer": 3
+    },
+    {
+        "question": "Was ist der Name des Hobbithauses, in dem Frodo Beutlin lebt?",
+        "answer_1": "Mühldorf",
+        "answer_2": "Beutelsend",
+        "answer_3": "Hobbingen",
+        "answer_4": "Rohan",
+        "right_answer": 2
     }
 ];
+
 
 
 let cssQuestions = [

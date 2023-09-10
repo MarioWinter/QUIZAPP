@@ -27,6 +27,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    overflow: hidden;
     
 }
 
@@ -35,30 +36,16 @@
     height: 80px;
 }
 
-.quiz-sidebar-html {
+
+.quiz-sidebar {
     cursor: pointer;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding: 10px 40%;
 }
 
 
-.quiz-sidebar-html:hover {
-    border-left: 4px solid white;
-    padding-left: 51px;
-    padding-right: 55px;
-}
-
-.quiz-sidebar-css {
-    cursor: pointer;
-    padding-left: 64px;
-    padding-right: 64px;
-}
-
-
-.quiz-sidebar-css:hover {
-    border-left: 4px solid white;
-    padding-left: 60px;
-    padding-right: 64px;
+.quiz-sidebar:hover {
+    background-color: cadetblue;
+    padding: 10px 40%;
 }
 
 

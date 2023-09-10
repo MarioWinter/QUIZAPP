@@ -8,7 +8,7 @@ let audioFail = new Audio('audio/fail.mp3');
 
 function init() {
     showHtmlQuestion();
-    document.getElementById('allQuestions').innerHTML = htmlQuestions.length;
+    document.getElementById('allQuestions').innerHTML = herrDerRingeQuestions.length;
 }
 
 
@@ -22,7 +22,7 @@ function showHtmlQuestion() {
 
 
 function QuizIsOver() {
-    return currentHtmlQuest == htmlQuestions.length;
+    return currentHtmlQuest == herrDerRingeQuestions.length;
 }
 
 
@@ -50,7 +50,7 @@ function addRightTextColor() {
 
 
 function showQuestScreen() {
-    let question = htmlQuestions[currentHtmlQuest];
+    let question = herrDerRingeQuestions[currentHtmlQuest];
     document.getElementById('cardContent').style.display = 'block';
     document.getElementById('questionTextHTML').innerHTML = question['question'];
     document.getElementById('answer_1').innerHTML = question['answer_1'];
@@ -61,7 +61,7 @@ function showQuestScreen() {
 
 
 function answer(selection) {
-    let question = htmlQuestions[currentHtmlQuest];
+    let question = herrDerRingeQuestions[currentHtmlQuest];
     let idRightAnswer = `answer_${question['right_answer']}`;
     let selectQuest = selection.slice(-1);
     addRightQuizColor(idRightAnswer, selectQuest, question, selection);
@@ -95,7 +95,7 @@ function nextQuest() {
 
 function nextPage() {
     let currentQuestPage = currentHtmlQuest;
-    if (currentHtmlQuest == htmlQuestions.length) {
+    if (currentHtmlQuest == herrDerRingeQuestions.length) {
     } else {
         currentQuestPage = currentQuestPage + 1
         document.getElementById('questPage').innerHTML = currentQuestPage;
@@ -120,7 +120,7 @@ function finishQuiz() {
             <div class="mb-4 fw-bold" >HTML QUIZ</div>
             <div class="finish-score mb-4">
                 <div id="score" class="fw-bold">YOUR SCORE</div>
-                <span class="fw-bold ms-4">${scores}/${htmlQuestions.length}</span>
+                <span class="fw-bold ms-4">${scores}/${herrDerRingeQuestions.length}</span>
             </div>
             <button class="btn btn-primary mb-3" >SHARE</button>
             <button class="replay-button text-primary" onclick="replayHTMLQuiz()">REPLAY</button>
@@ -141,7 +141,7 @@ function replayHTMLQuiz() {
 
 
 function loadProgressBar() {
-    let progress = Math.round(currentHtmlQuest / htmlQuestions.length * 100);
+    let progress = Math.round(currentHtmlQuest / herrDerRingeQuestions.length * 100);
     document.getElementById('pogressBar').innerHTML = `${progress}%`;
     document.getElementById('pogressBar').style.width = `${progress}%`;
 }
